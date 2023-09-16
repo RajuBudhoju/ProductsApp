@@ -1,0 +1,153 @@
+/* Removing all default margin,padding box-sizing to webpage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #3f3f3f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content of AB app BODY */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+/* ******************************************INPUT CONTACT******************************************* */
+
+/* INPUT BOXES (2) */
+form#contactForm {
+    background-color: #e1e1e1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Update your CSS for input boxes */
+#contactForm input[type="number"],
+#contactForm input[type="text"] {
+    flex: 1;
+    /* Use flex property */
+    padding: 0.5rem;
+    padding-right: 5rem;
+    margin-top: 0.2rem;
+    border: 1px solid #686565;
+    border-radius: 4px;
+}
+
+#contactForm input[type="number"] {
+    margin-left: 3.7rem;
+    padding-right: 5rem;
+}
+
+/* SAVE CONTACT BUTTON */
+button#saveContact {
+    display: block;
+    width: 20%;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+
+/* CANCEL BUTTON */
+button#cancelEdit {
+    width: 20%;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+button#saveContact:hover,
+button#cancelEdit:hover {
+    background-color: #555;
+}
+
+#productsId {
+    margin-right: 20%;
+    margin-bottom: 1%;
+    text-align: right;
+}
+
+
+/* ******************************************LIST OF CONTACTS********************************************** */
+ul {
+    list-style-type: none;
+}
+
+#contactList {
+
+    list-style: none;
+    padding: 0;
+}
+
+#contactList li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contactList li:hover {
+    background-color: #e0e0e0;
+}
+
+.list {
+    position: relative;
+}
+
+.edit-button {
+    position: absolute;
+    right: 12%;
+    width: 8%;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+.delete-button {
+    position: absolute;
+    right: 2%;
+    width: 8%;
+    background-color: #c73838;
+    color: white;
+    border: none;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 0.2rem;
+}
+
+.delete-button:hover {
+    background-color: #f09191;
+
+}
+
+.edit-button:hover {
+    background-color: #555;
+}

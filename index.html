@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+        <!-- INPUT FORM  -->
+        <form id="contactForm">
+
+            <label for="proName">Product Name</label>
+            <input type="text" id="proId" placeholder="Enter product name.." required>
+
+            <label for="amount"><br>Price </label>
+            <input type="number" id="amountid" placeholder="Enter price..." />
+
+            <button type="submit" id="saveContact">Add Product</button>
+        </form>
+
+        <!-- LIST OF GIVEN INPUTS -->
+        <div id="totalWorth">
+            <h3 id="pro">Products</h3>
+            <h3 id="productsId">Total Worth of Products: 0.00</h3>
+        </div>
+
+        <div class="list">
+            <ul id="contactList">
+                <!-- <li>...</li> -->
+                <!-- Contacts will be added here dynamically -->
+            </ul>
+        </div>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+<script src="script.js"></script>
+
+</html>
